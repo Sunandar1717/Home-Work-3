@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    var interval = setInterval(function () {
-        var momentNow = moment();
+    let interval = setInterval(function () {
+        let momentNow = moment();
         $("#date-part").html(
             momentNow.format("YYYY MMMM DD") +
             " " +
@@ -11,17 +11,17 @@ $(document).ready(function () {
 });
 
 function validate(evt) {
-    var theEvent = evt || window.event;
+    let theEvent = evt || window.event;
 
     // Handle paste
     if (theEvent.type === "paste") {
         key = event.clipboardData.getData("text/plain");
     } else {
         // Handle key press
-        var key = theEvent.keyCode || theEvent.which;
+        let key = theEvent.keyCode || theEvent.which;
         key = String.fromCharCode(key);
     }
-    var regex = /[0-9]|\./;
+    let regex = /[0-9]|\./;
     if (!regex.test(key)) {
         theEvent.returnValue = false;
         if (theEvent.preventDefault) theEvent.preventDefault();
