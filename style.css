@@ -1,0 +1,12 @@
+.container {
+    width: 80%;
+    margin-top: 10%;
+}
+
+#date-part {
+    font-size: 1.2em;
+}
+
+#time-part {
+    font-size: 2em;
+}
