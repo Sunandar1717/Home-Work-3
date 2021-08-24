@@ -1,12 +1,40 @@
 .container {
     width: 80%;
     margin-top: 10%;
+    color: orange;
 }
 
-#date-part {
-    font-size: 1.2em;
+#tanggal {
+    font-size: 3em;
+    font-family: 'Roboto',
+        sans-serif;
+    color: orange;
 }
 
-#time-part {
+#waktu {
     font-size: 2em;
+    font-family: 'Roboto',
+        sans-serif;
+    color: orange;
+}
+
+.pilihan {
+    font-size: 1.5em;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+.judul {
+    font-size: 1.5em;
+    font-family: 'Roboto',
+        sans-serif;
+    color: orange;
+}
+
+#from {
+    color: seagreen;
+}
+
+#to {
+    color: seagreen;
 }

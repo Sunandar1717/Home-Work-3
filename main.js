@@ -1,12 +1,12 @@
 $(document).ready(function () {
     let interval = setInterval(function () {
         let momentNow = moment();
-        $("#date-part").html(
+        $("#tanggal").html(
             momentNow.format("YYYY MMMM DD") +
             " " +
             momentNow.format("dddd").substring(0, 3).toUpperCase()
         );
-        $("#time-part").html(momentNow.format("A hh:mm:ss"));
+        $("#waktu").html(momentNow.format("A hh:mm:ss"));
     }, 100);
 });
 
